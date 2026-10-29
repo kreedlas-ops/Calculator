@@ -1,4 +1,5 @@
 # Сборка
+/Calculator.exe
 /tests/EngineTests.exe
 /bin/
 /obj/
