@@ -1,0 +1,30 @@
+name: Сборка и тесты
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Получить код
+        uses: actions/checkout@v4
+
+      - name: Собрать калькулятор
+        shell: powershell
+        run: ./build.ps1
+
+      - name: Проверить арифметику
+        shell: powershell
+        run: ./tests/run-tests.ps1
+
+      - name: Сохранить собранный exe
+        uses: actions/upload-artifact@v4
+        with:
+          name: Calculator
+          path: Calculator.exe
+          if-no-files-found: error

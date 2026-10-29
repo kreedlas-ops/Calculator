@@ -1,0 +1,12 @@
+# Нормализуем переводы строк в репозитории
+* text=auto
+
+*.cs       text diff=csharp
+*.ps1      text
+*.md       text
+*.json     text
+*.manifest text
+*.config   text
+*.ico      binary
+*.png      binary
+*.exe      binary

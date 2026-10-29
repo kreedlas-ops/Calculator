@@ -1,0 +1,20 @@
+# Сборка
+/tests/EngineTests.exe
+/bin/
+/obj/
+/artifacts/
+
+# Visual Studio / VS Code
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Снимки экрана, созданные tools\screenshot.ps1
+/screenshots/
+
+# Временные файлы Windows
+Thumbs.db
+desktop.ini
+*.log

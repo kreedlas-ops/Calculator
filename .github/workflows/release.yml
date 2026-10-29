@@ -1,0 +1,31 @@
+name: Выпуск
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+
+    steps:
+      - name: Получить код
+        uses: actions/checkout@v4
+
+      - name: Собрать калькулятор
+        shell: powershell
+        run: ./build.ps1
+
+      - name: Проверить арифметику
+        shell: powershell
+        run: ./tests/run-tests.ps1
+
+      - name: Опубликовать релиз
+        uses: softprops/action-gh-release@v2
+        with:
+          files: Calculator.exe
+          generate_release_notes: true
