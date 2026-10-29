@@ -2,6 +2,8 @@
 
 Простой калькулятор в стиле стандартного приложения Windows 11: тёмная тема, крупный дисплей, кнопки со скруглёнными углами и голубая кнопка «=». Только базовые операции — без инженерных функций.
 
+Максимально простой и удобный калькулятор с большими кнопками для Windows.
+
 Версия 1.0.
 
 ![Скриншот калькулятора](docs/screenshot.png)
@@ -27,8 +29,8 @@
 Нужен только Windows: компилятор C# уже есть в составе системы.
 
 ```powershell
-git clone https://github.com/ВАШ-НИК/ВАШ-РЕПОЗИТОРИЙ.git
-cd ВАШ-РЕПОЗИТОРИЙ
+git clone https://github.com/kreedlas-ops/Calculator.git
+cd Calculator
 powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1
 ```
 
