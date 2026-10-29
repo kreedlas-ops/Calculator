@@ -405,11 +405,12 @@ namespace Calculator
 
         private void ShowInfo()
         {
+            string version = Application.ProductVersion;
             string body = "Простой калькулятор для Windows 11.\r\n\r\n" +
                           "Сложение, вычитание, умножение, деление, проценты и память — " +
                           "без лишних функций.\r\n\r\n" +
-                          "Версия 1.0 · .NET Framework 4.8";
-            using (InfoForm form = new InfoForm("О программе", "Калькулятор 1.0", body, false))
+                          "Версия " + version + " · .NET Framework 4.8";
+            using (InfoForm form = new InfoForm("О программе", "Калькулятор " + version, body, false))
             {
                 form.ShowDialog(this);
             }

@@ -2,6 +2,8 @@
 
 Простой калькулятор в стиле стандартного приложения Windows 11: тёмная тема, крупный дисплей, кнопки со скруглёнными углами и голубая кнопка «=». Только базовые операции — без инженерных функций.
 
+Версия 1.0.
+
 ![Скриншот калькулятора](docs/screenshot.png)
 
 ## Возможности
@@ -65,8 +67,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\tests\run-tests.ps1
 | `src/DarkMenuRenderer.cs` | Тёмное оформление контекстных меню |
 | `src/InfoForm.cs` | Окна «О программе» и «Горячие клавиши» |
 | `src/Native.cs` | Тёмный заголовок окна Windows 11 и чтение раскладки клавиатуры |
+| `src/AssemblyInfo.cs` | Версия, название и описание файла |
 | `tests/EngineTests.cs` | Тесты логики вычислений |
-| `tools/make-icon.ps1` | Генерация `Calculator.ico` |
+| `tools/make-icon.ps1` | Сборка `Calculator.ico` из `assets/app-icon.png` |
 | `tools/screenshot.ps1` | Снимок окна для документации |
 | `app.manifest` | Манифест: DPI-awareness, поддержка Windows 10/11 |
 
