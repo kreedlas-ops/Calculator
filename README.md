@@ -30,6 +30,13 @@ cd ВАШ-РЕПОЗИТОРИЙ
 powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1
 ```
 
+Или, если проект уже открыт локально, без клонирования:
+
+```powershell
+cd путь\к\Calculator
+powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1
+```
+
 Собрать и сразу запустить:
 
 ```powershell
