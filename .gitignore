@@ -15,6 +15,9 @@
 # Снимки экрана, созданные tools\screenshot.ps1
 /screenshots/
 
+# Локальная инструкция по публикации
+/PUBLISH.md
+
 # Временные файлы Windows
 Thumbs.db
 desktop.ini
